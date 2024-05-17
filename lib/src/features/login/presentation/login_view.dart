@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task_ui_screen/src/features/uiscreen/widgets/custom_button.dart';
-import 'package:task_ui_screen/src/features/uiscreen/widgets/custom_button_link.dart';
-import 'package:task_ui_screen/src/features/uiscreen/widgets/custom_text_field.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_button.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_button_link.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_text_field.dart';
+
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
