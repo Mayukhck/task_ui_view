@@ -55,6 +55,7 @@ class LoginView extends StatelessWidget {
                     height: 64,
                   ),
                   const RoundTextField(
+                    key: ValueKey('email_faild'),
                     label: 'Your email address',
                     inputType: TextInputType.emailAddress,
                   ),
@@ -62,6 +63,7 @@ class LoginView extends StatelessWidget {
                     height: 16,
                   ),
                   const RoundTextField(
+                    key: ValueKey('password'),
                     label: 'Choose a password',
                     obscureText: true,
                     suffixIcon: Icon(Icons.visibility_off),
@@ -70,6 +72,7 @@ class LoginView extends StatelessWidget {
                     height: 16,
                   ),
                   ContinueButton(
+                    key: const ValueKey('continue_button'),
                     text: 'Continue',
                     backgroundColor: HexColor('#a8fe86'),
                     onPressed: () {},
@@ -97,6 +100,7 @@ class LoginView extends StatelessWidget {
                     height: 16,
                   ),
                   SocialSignInButton(
+                    key: const ValueKey('google_sign_up_button'),
                     text: 'Sign up with Google',
                     backgroundColor: Colors.white,
                     onPressed: () {},
@@ -110,6 +114,7 @@ class LoginView extends StatelessWidget {
                     height: 16,
                   ),
                   SocialSignInButton(
+                    key: const ValueKey('apple_sign_up_button'),
                     text: 'Sign up with Apple',
                     backgroundColor: Colors.white,
                     onPressed: () {},
