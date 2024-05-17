@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomButtonLink extends StatelessWidget {
+class SocialSignInButton extends StatelessWidget {
   final String text;
   final Color backgroundColor;
   final VoidCallback onPressed;
   final Widget? icon;
 
-  const CustomButtonLink({
+  const SocialSignInButton({
     super.key,
     required this.text,
     required this.backgroundColor,

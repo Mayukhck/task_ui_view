@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomTextField extends StatelessWidget {
+class RoundTextField extends StatelessWidget {
   final String label;
   final TextInputType inputType;
   final bool obscureText;
   final Widget? suffixIcon;
 
-  const CustomTextField({
+  const RoundTextField({
     super.key,
     required this.label,
     this.inputType = TextInputType.text,

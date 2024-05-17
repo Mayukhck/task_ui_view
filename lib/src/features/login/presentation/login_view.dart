@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_button.dart';
-import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_button_link.dart';
-import 'package:task_ui_screen/src/features/login/presentation/widgets/custom_text_field.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/continue_button.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/social_sign_in_button.dart';
+import 'package:task_ui_screen/src/features/login/presentation/widgets/round_text_field.dart';
 
 
 class LoginView extends StatelessWidget {
@@ -32,6 +32,7 @@ class LoginView extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Text(
+                        key: const ValueKey('title'),
                         'Leafboard',
                         style: GoogleFonts.poppins(
                           fontSize: 20,
@@ -44,6 +45,7 @@ class LoginView extends StatelessWidget {
                     height: 16,
                   ),
                   Text(
+                    key: const ValueKey('sub_title'),
                     'Work without limits',
                     style: GoogleFonts.poppins(
                       fontSize: 15,
@@ -52,14 +54,14 @@ class LoginView extends StatelessWidget {
                   const SizedBox(
                     height: 64,
                   ),
-                  const CustomTextField(
+                  const RoundTextField(
                     label: 'Your email address',
                     inputType: TextInputType.emailAddress,
                   ),
                   const SizedBox(
                     height: 16,
                   ),
-                  const CustomTextField(
+                  const RoundTextField(
                     label: 'Choose a password',
                     obscureText: true,
                     suffixIcon: Icon(Icons.visibility_off),
@@ -67,7 +69,7 @@ class LoginView extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  CustomButton(
+                  ContinueButton(
                     text: 'Continue',
                     backgroundColor: HexColor('#a8fe86'),
                     onPressed: () {},
@@ -94,7 +96,7 @@ class LoginView extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  CustomButtonLink(
+                  SocialSignInButton(
                     text: 'Sign up with Google',
                     backgroundColor: Colors.white,
                     onPressed: () {},
@@ -107,7 +109,7 @@ class LoginView extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  CustomButtonLink(
+                  SocialSignInButton(
                     text: 'Sign up with Apple',
                     backgroundColor: Colors.white,
                     onPressed: () {},

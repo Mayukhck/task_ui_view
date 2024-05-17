@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomButton extends StatelessWidget {
+class ContinueButton extends StatelessWidget {
   final String text;
   final Color backgroundColor;
   final VoidCallback onPressed;
   final Widget? icon;
 
-  const CustomButton({
+  const ContinueButton({
     super.key,
     required this.text,
     required this.backgroundColor,
