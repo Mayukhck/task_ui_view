@@ -55,7 +55,7 @@ class LoginView extends StatelessWidget {
                     height: 64,
                   ),
                   const RoundTextField(
-                    key: ValueKey('email_faild'),
+                    key: ValueKey('email_filed'),
                     label: 'Your email address',
                     inputType: TextInputType.emailAddress,
                   ),
